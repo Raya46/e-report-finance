@@ -18,7 +18,6 @@ import {
   ChevronDown,
   ChevronRight,
   LogOut,
-  Anchor,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -98,8 +97,8 @@ export function AppSidebar() {
     <aside className="fixed left-0 top-0 z-40 h-screen w-64 bg-sidebar border-r border-sidebar-border flex flex-col">
       {/* Logo */}
       <div className="flex items-center gap-3 px-6 py-5 border-b border-sidebar-border">
-        <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sidebar-primary">
-          <Anchor className="w-5 h-5 text-sidebar-primary-foreground" />
+        <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-sidebar-primary/10">
+          <img src="/favicon.png" alt="Logo" className="w-7 h-7" />
         </div>
         <div>
           <h1 className="text-lg font-bold text-sidebar-foreground">Lantech</h1>

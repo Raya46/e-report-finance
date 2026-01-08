@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Anchor, Eye, EyeOff, Loader2 } from "lucide-react";
+import { Eye, EyeOff, Loader2 } from "lucide-react";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -12,7 +12,7 @@ export default function Login() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     // Simulate login - replace with actual auth later
     setTimeout(() => {
       setIsLoading(false);
@@ -25,18 +25,18 @@ export default function Login() {
       {/* Left side - branding */}
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-primary relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30"></div>
-        
+
         <div className="relative z-10 flex flex-col justify-center px-12 xl:px-20">
           <div className="flex items-center gap-4 mb-8">
             <div className="flex items-center justify-center w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-sm">
-              <Anchor className="w-7 h-7 text-white" />
+              <img src="/favicon.png" alt="Logo" className="w-9 h-9" />
             </div>
             <div>
               <h1 className="text-3xl font-bold text-white">Lantech</h1>
               <p className="text-white/70 text-sm">E-Report Finance</p>
             </div>
           </div>
-          
+
           <div className="space-y-6 max-w-md">
             <h2 className="text-4xl xl:text-5xl font-bold text-white leading-tight">
               Kelola Bisnis Logistik Anda dengan Mudah
@@ -44,7 +44,7 @@ export default function Login() {
             <p className="text-lg text-white/80">
               Sistem terintegrasi untuk operasional, penjualan, keuangan, dan pelaporan dalam satu platform.
             </p>
-            
+
             <div className="grid grid-cols-2 gap-4 pt-6">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                 <p className="text-3xl font-bold text-white">500+</p>
@@ -68,8 +68,8 @@ export default function Login() {
         <div className="w-full max-w-md space-y-8 animate-fade-in">
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center justify-center gap-3 mb-8">
-            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-primary">
-              <Anchor className="w-6 h-6 text-white" />
+            <div className="flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-primary/20 backdrop-blur-sm">
+              <img src="/favicon.png" alt="Logo" className="w-8 h-8" />
             </div>
             <div>
               <h1 className="text-2xl font-bold text-foreground">Lantech</h1>
